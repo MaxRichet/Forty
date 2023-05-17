@@ -1,0 +1,637 @@
+/* fichier main.css */
+
+:root{
+    --white : #fff;
+
+    --hover : #9bf1ff;
+    --main  : #2a2f4a;
+    --secondary : #242943;
+    --navBk :  rgba(36, 41, 67, 0.9);
+    --navLine : rgba(212, 212, 255, 0.1);
+    --color1 : #6fc3df;
+    --color2 : #8d82c4;
+    --color3 : #ec8d81;
+    --color4 : #e7b788;
+    --color5 : #8ea9e8;
+    --color6 : #87c5a4;
+    --footerCnt : rgba(244, 244, 255, 0.2);
+}
+
+html{
+    background: var(--main);
+    color: var(--white);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+/* de base, la nav est cachée */
+nav{
+    display: none;
+}
+
+/* si body à la classe open, alors la nav apparait */
+.open nav{
+    display: block;
+}
+
+.intro{
+    padding: 250px 250px 160px 250px; 
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.intro::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: var(--main);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+.intro > *{
+    position: relative;
+    z-index: 1;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-weight: bold;
+    border-bottom: solid 2px var(--white);
+    padding-bottom: 17px;
+}
+
+p{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-top: 25px;
+}
+
+header{
+    background-color: transparent;
+}
+
+header span{
+    background-color: var(--white);
+    color: #242943;
+    padding: 2px 3px 3px 7px;
+    margin-right: 7px;
+}
+
+header span:hover{
+    background-color: var(--hover);
+    transition: 0.3s;
+}
+
+header h1{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    float: left;
+    margin: 24px 0 0 27px;
+    border: none;
+}
+
+#burger{
+    border: 0;
+    background: 0;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--white);
+    z-index: 1;
+    position: relative;
+    float: right;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 27px 27px 0 0;
+}
+
+#burger:hover{
+    color: var(--hover);
+    transition: 0.3s;
+}
+
+.intro h1{
+    font-size: 4.9rem;
+    font-weight: bold;
+    border-bottom: solid 2px var(--white);
+    padding-bottom: 35px;
+    top: 15px;
+    right: 30px;
+}
+
+.intro div p{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 65px;
+    letter-spacing: 4px;
+    right: 30px;
+    position: relative;
+    right: 30px;
+}
+
+.intro div p:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    border: solid 2px var(--white);
+    padding: 18px 33px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+#bouton{
+    position: relative;
+    left: 590px;
+    bottom: 95px;
+}
+
+.button:hover{
+    color: var(--hover);
+    border-color: var(--hover);
+    transition: 0.3s;
+}
+
+.colors h1{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.colors p{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#aliquam::before{
+    content: '';
+    display: block;
+    width: 765px;
+    height: 531px;
+    background: var(--color1);
+
+    position: absolute;
+    top: 741px;
+    left: -4px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#aliquam > *{
+    position: relative;
+    z-index: 1;
+}
+
+#aliquam{
+    background: url(../images/pic01.jpg);
+    float: left;
+    padding: 265px;
+    background-size: 761px 530px;
+    background-repeat: no-repeat;
+}
+
+#aliquam h1{
+    position: relative;
+    right: 170px;
+    bottom: 55px;
+    width: 260px;
+}
+
+#aliquam p{
+    position: relative;
+    right: 170px;
+    bottom: 55px;
+}
+
+#tempus::before{
+    content: '';
+    display: block;
+    width: 1142px;
+    height: 531px;
+    background: var(--color2);
+
+    position: absolute;
+    top: 741px;
+    right: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#tempus > *{
+    position: relative;
+    z-index: 1;
+}
+
+#tempus{
+    background: url(../images/pic02.jpg);
+    background-position: right;
+    background-size: 1142px 530px;
+    background-repeat: no-repeat;
+    padding: 206px;
+}
+
+#tempus h1{
+    position: relative;
+    left: 65px;
+    top: 5px;
+    width: 240px;
+}
+
+#tempus p{
+    position: relative;
+    left: 65px;
+    top: 5px;
+}
+
+#magna::before{
+    content: '';
+    display: block;
+    width: 1142px;
+    height: 532px;
+    background: var(--color3);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#magna > *{
+    position: relative;
+    z-index: 1;
+}
+
+#magna{
+    background: url(../images/pic03.jpg);
+    position: absolute;
+    float: left;
+    background-size: 1142px 530px;
+    background-repeat: no-repeat;
+    padding: 456px;
+}
+
+#magna h1{
+    position: relative;
+    bottom: 248px;
+    right: 370px;
+    width: 240px;
+}
+
+#magna p{
+    position: relative;
+    bottom: 248px;
+    right: 370px;
+}
+
+#ipsum::before{
+    content: '';
+    display: block;
+    width: 761px;
+    height: 532px;
+    background: var(--color4);
+
+    position: absolute;
+    top: 1272px;
+    right: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#ipsum > *{
+    position: relative;
+    z-index: 1;
+}
+
+#ipsum{
+    background: url(../images/pic04.jpg);
+    background-position: right;
+    background-size: 761px 530px;
+    background-repeat: no-repeat;
+    padding: 206px;
+}
+
+#ipsum h1{
+    position: relative;
+    left: 1025px;
+    width: 210px;
+}
+
+#ipsum p{
+    position: relative;
+    margin-left: 1025px;
+}
+
+#consequat::before{
+    content: '';
+    display: block;
+    width: 765px;
+    height: 530px;
+    background: var(--color5);
+
+    position: absolute;
+    top: 1804px;
+    left: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#consequat > *{
+    position: relative;
+    z-index: 1;
+}
+
+#consequat{
+    background: url(../images/pic05.jpg);
+    float: left;
+    background-size: 766px 530px;
+    background-repeat: no-repeat;
+    padding: 206px 265px;
+}
+
+#consequat h1{
+    position: relative;
+    right: 175px;
+    bottom: 0px;
+    width: 265px;
+}
+
+#consequat p{
+    position: relative;
+    right: 175px;
+    bottom: 0px;
+}
+
+#etiam::before{
+    content: '';
+    display: block;
+    width: 1138px;
+    height: 530px;
+    background: var(--color6);
+
+    position: absolute;
+    top: 1804px;
+    right: 0px;
+    z-index: 0;
+    opacity: 0.85;
+}
+
+#etiam > *{
+    position: relative;
+    z-index: 1;
+}
+
+#etiam{
+    background: url(../images/pic06.jpg);
+    background-position: right;
+    background-size: 1138px 530px;
+    background-repeat: no-repeat;
+    padding: 206px;
+}
+
+#etiam h1{
+    position: relative;
+    left: 55px;
+    width: 260px;
+}
+
+#etiam p{
+    position: relative;
+    left: 55px;
+}
+
+.single{
+    position: relative;
+    padding: 100px 210px 80px 210px;
+}
+
+.single h1{
+    padding-bottom: 25px;
+    width: 245px;
+}
+
+.single p{
+    line-height: 35px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-size: 20px;
+    margin-top: 45px;
+    padding-bottom: 25px;
+}
+
+footer{
+    background: var(--secondary);
+}
+
+footer h1{
+    font-size: 31px;
+}
+
+footer label{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    padding-bottom: 25px;
+    
+}
+
+#naming{
+    background: var(--main);
+    border: none;
+    padding: 23px 110px;
+    margin-right: 35px;
+}
+
+#mail{
+    background: var(--main);
+    border: none;
+    padding: 23px 110px;
+}
+
+#placement{
+    padding: 20px 0;
+}
+
+footer .buttonfull{
+    border: none;
+    background-color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    letter-spacing: 5px;
+    border: solid 2px var(--white);
+}
+
+footer .buttonfull:hover{
+    background-color: var(--hover);
+    border-color: var(--hover);
+    transition: 0.3s;
+}
+
+footer .button{
+    text-transform: uppercase;
+    border: solid 2px var(--white);
+    background-color: var(--secondary);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 20px 28px;
+    position: relative;
+    bottom: 87px;
+    left: 270px;
+}
+
+form{
+    padding: 70px 0 14px 210px;
+    border-bottom: solid 1px var(--footerCnt);
+    border-right: solid 1px var(--footerCnt);
+    width: 1100px;
+}
+
+textarea{
+    background: var(--main);
+    border: none;
+    padding: 0px 650px 210px 0;
+}
+
+form div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li h1{
+    border: none;
+}
+
+#column{
+    display: flex;
+}
+
+#contact h1{
+    padding: 0;
+}
+
+#contact i{
+    position: relative;
+    right: 50px;
+    top: 30px;
+    font-size: 23px;
+}
+
+#email p{
+    width: 700px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    font-size: 23px;
+    border-bottom: dotted 1px var(--white);
+    width: 240px;
+}
+
+#email p:hover{
+    border: none;
+    padding-bottom: 1px;
+}
+
+#email{
+    border-bottom: solid 1px var(--footerCnt);
+    padding: 50px 0 80px 140px;
+}
+
+#phone p{
+    width: 700px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+#phone{
+    border-bottom: solid 1px var(--footerCnt);
+    padding: 50px 0 80px 140px;
+}
+
+#adress p{
+    width: 700px;
+    text-transform: none;
+    letter-spacing: 0px;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+#adress{
+    border-bottom: solid 1px var(--footerCnt);
+    padding: 50px 0 80px 140px;
+}
+
+#media{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    font-size: 23px;
+    padding-top: 100px;
+    padding-left: 220px;
+    padding-bottom: 40px;
+}
+
+#copyright{
+    display: flex;
+    font-weight: lighter;
+    letter-spacing: 0px;
+    padding: 0 0 80px 220px;
+}
+
+#copyright p{
+    text-transform: none;
+    color: var(--footerCnt);
+    margin: 0;
+}
+
+#copyright a{
+    border-bottom: dotted 1px var(--footerCnt);
+}
+
+#copyright a:hover{
+    border: none;
+    transition: 0.3s;
+}
+
+#line1{
+    border-right: solid 1px var(--footerCnt);
+    padding-right: 15px;
+}
+
+#line2{
+    border-right: solid 1px var(--footerCnt);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#line3{
+    padding-left: 15px;
+}
